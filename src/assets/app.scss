@@ -482,7 +482,11 @@ main {
 /* footer */
 footer {
   background-color: var(--footer-background-color);
-  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
 
   small {
     color: #6A6E77;
@@ -1014,4 +1018,16 @@ footer {
   -ms-flex-pack : center;
   -webkit-justify-content : center;
   justify-content : center;
+}
+
+.bg-online{
+  background-color: #64BA6C!important;
+  color: white!important;
+}
+
+.staffUserBorder {
+  border: 2px;
+  border-radius: 50%;
+  padding: 10px;
+  background-image: url(/assets/images/staffBg.png);
 }

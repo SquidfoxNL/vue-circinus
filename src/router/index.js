@@ -10,6 +10,9 @@ import middlewarePipeline from './middleware/middlewarePipeline'
 import Home from '../views/Home'
 import Register from '../views/Register'
 import Article from '../views/Article'
+import CommunityIndex from '../views/Community/Index'
+import CommunityStaff from '../views/Community/Staff'
+
 
 Vue.use(Router);
 
@@ -21,6 +24,16 @@ const router = new Router({
       name: 'home',
       component: Home
     },
+    // Community routes
+
+    {
+      path: '/community/staff',
+      name: 'staff',
+      component: CommunityStaff
+    },
+
+    // Actions
+
     {
       path: '/logout',
       name: 'logout',

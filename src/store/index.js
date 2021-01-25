@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 
 import auth from './modules/user/auth';
 import votes from './modules/user/votes';
+import permissions from './modules/user/permissions';
 import client from './modules/client/client';
 import loader from './modules/loader';
 
@@ -28,6 +29,7 @@ export default new Vuex.Store({
       register,
       client,
       votes,
+      permissions,
       loader
   }
 })
