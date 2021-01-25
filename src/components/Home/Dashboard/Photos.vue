@@ -22,12 +22,12 @@
                     <div class="d-inline-flex flex-row align-items-center">
 
                         <span class="mr-3 font-weight-bold" @click="votePhoto('likes')">
-                            <i :style="{color: voted(1)}" class="far fa-thumbs-down mr-2"></i>
+                            <font-awesome-icon :style="{color: voted(1)}" icon="thumbs-up" class="mr-2"></font-awesome-icon>
                             {{ this.photo.likes }}
                         </span>
 
                         <span class="mr-3 font-weight-bold" @click="votePhoto('dislikes')">
-                            <i :style="{color: voted(0)}" class="far fa-thumbs-down mr-2"></i>
+                            <font-awesome-icon :style="{color: voted(0)}" icon="thumbs-down" class="mr-2"></font-awesome-icon>
                             {{ this.photo.dislikes }}
                         </span>
                     </div>

@@ -1,12 +1,11 @@
 const path = require('path')
 
 module.exports = {
+  publicPath: '/',
   pluginOptions: {
-    'style-resources-loader': {
-      preProcessor: 'scss',
-      patterns: [
-        'C:\\Users\\31629\\PhpstormProjects\\circinus-vue\\circinus\\src\\assets\\app.scss'
-      ]
+    "style-resources-loader": {
+      preProcessor: "scss",
+      patterns: [path.resolve(__dirname, "./src/assets/app.scss")]
     },
     i18n: {
       locale: 'en',
